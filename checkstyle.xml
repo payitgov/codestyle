@@ -65,7 +65,6 @@
         <module name="EqualsHashCode"/>
         <module name="ExplicitInitialization"/>
         <module name="FallThrough"/>
-	<module name="IllegalCatch"/>
         <module name="IllegalTokenText">
             <property name="tokens" value="STRING_LITERAL, CHAR_LITERAL"/>
             <property name="format" value="\\u00(08|09|0(a|A)|0(c|C)|0(d|D)|22|27|5(C|c))|\\(0(10|11|12|14|15|42|47)|134)"/>
@@ -78,12 +77,11 @@
         <module name="OverloadMethodsDeclarationOrder"/>
         <module name="PackageDeclaration"/>
         <module name="StringLiteralEquality"/>
-        <module name="VariableDeclarationUsageDistance"/>
-	<!-- Design -->
-	<module name="VisibilityModifier">
-		<property name="protectedAllowed" value="true" />
-	</module>
 
+      	<!-- Design -->
+      	<module name="VisibilityModifier">
+      		<property name="protectedAllowed" value="true" />
+      	</module>
 
         <!-- Imports -->
         <module name="AvoidStarImport"/>
@@ -111,9 +109,7 @@
             <property name="allowByTailComment" value="true"/>
             <property name="allowNonPrintableEscapes" value="true"/>
         </module>
-        <!-- Requires 6.10
         <module name="CommentsIndentation"/>
-        -->
         <module name="Indentation">
             <property name="basicOffset" value="4"/>
             <property name="braceAdjustment" value="0"/>
@@ -128,65 +124,6 @@
         <!-- Modifiers -->
         <module name="ModifierOrder"/>
         <module name="RedundantModifier"/>
-
-        <!-- Naming Conventions -->
-        <module name="AbbreviationAsWordInName">
-            <property name="ignoreFinal" value="false"/>
-            <property name="allowedAbbreviationLength" value="1"/>
-        </module>
-        <!-- Requires 6.14
-        <module name="CatchParameterName">
-            <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9]*$"/>
-            <message key="name.invalidPattern"
-             value="Catch parameter name ''{0}'' must match pattern ''{1}''."/>
-        </module>
-        -->
-        <module name="ClassTypeParameterName">
-            <property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
-            <message key="name.invalidPattern"
-             value="Class type name ''{0}'' must match pattern ''{1}''."/>
-        </module>
-        <module name="InterfaceTypeParameterName">
-            <property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
-            <message key="name.invalidPattern"
-             value="Interface type name ''{0}'' must match pattern ''{1}''."/>
-        </module>
-        <module name="LocalVariableName">
-            <property name="tokens" value="VARIABLE_DEF"/>
-            <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9]*$"/>
-            <property name="allowOneCharVarInForLoop" value="true"/>
-            <message key="name.invalidPattern"
-             value="Local variable name ''{0}'' must match pattern ''{1}''."/>
-        </module>
-        <module name="MemberName">
-            <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9]*$"/>
-            <message key="name.invalidPattern"
-             value="Member name ''{0}'' must match pattern ''{1}''."/>
-        </module>
-        <module name="MethodName">
-            <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9_]*$"/>
-            <message key="name.invalidPattern"
-             value="Method name ''{0}'' must match pattern ''{1}''."/>
-        </module>
-        <module name="MethodTypeParameterName">
-            <property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
-            <message key="name.invalidPattern"
-             value="Method type name ''{0}'' must match pattern ''{1}''."/>
-        </module>
-        <module name="PackageName">
-            <property name="format" value="^[a-z]+(\.[a-z][a-z0-9]*)*$"/>
-            <message key="name.invalidPattern"
-             value="Package name ''{0}'' must match pattern ''{1}''."/>
-        </module>
-        <module name="ParameterName">
-            <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9]*$"/>
-            <message key="name.invalidPattern"
-             value="Parameter name ''{0}'' must match pattern ''{1}''."/>
-        </module>
-        <module name="TypeName">
-            <message key="name.invalidPattern"
-             value="Type name ''{0}'' must match pattern ''{1}''."/>
-        </module>
 
         <!-- Size Violations -->
         <module name="LineLength">

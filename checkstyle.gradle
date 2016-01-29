@@ -1,6 +1,6 @@
 apply plugin: 'checkstyle'
 
 checkstyle {
-    toolVersion = '6.7'
+    toolVersion = '6.14.1'
     config resources.text.fromString('https://bitbucket.org/paypit/codestyle/raw/master/checkstyle.xml'.toURL().getText())
 }
