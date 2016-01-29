@@ -109,7 +109,9 @@
             <property name="allowThrowsTagsForSubclasses" value="true"/>
         </module>
         <module name="SingleLineJavadoc">
+            <!-- Requires 6.8
             <property name="ignoreInlineTags" value="false"/>
+            -->
         </module>
         <module name="NonEmptyAtclauseDescription"/>
 
@@ -120,7 +122,9 @@
             <property name="allowByTailComment" value="true"/>
             <property name="allowNonPrintableEscapes" value="true"/>
         </module>
+        <!-- Requires 6.10
         <module name="CommentsIndentation"/>
+        -->
         <module name="Indentation">
             <property name="basicOffset" value="4"/>
             <property name="braceAdjustment" value="0"/>
@@ -141,11 +145,13 @@
             <property name="ignoreFinal" value="false"/>
             <property name="allowedAbbreviationLength" value="1"/>
         </module>
+        <!-- Requires 6.14
         <module name="CatchParameterName">
             <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9]*$"/>
             <message key="name.invalidPattern"
              value="Catch parameter name ''{0}'' must match pattern ''{1}''."/>
         </module>
+        -->
         <module name="ClassTypeParameterName">
             <property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
             <message key="name.invalidPattern"
