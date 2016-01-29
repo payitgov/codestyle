@@ -2,5 +2,5 @@ apply plugin: 'checkstyle'
 
 checkstyle {
     toolVersion = '6.7'
-    config resources.text.fromString('https://bitbucket.org/paypit/codestyle/raw/6003bf8877f55ca9bbd08982269419862f91784c/checkstyle.xml'.toURL().getText())
+    config resources.text.fromString('https://bitbucket.org/paypit/codestyle/raw/master/checkstyle.xml'.toURL().getText())
 }
