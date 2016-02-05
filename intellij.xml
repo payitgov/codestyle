@@ -18,6 +18,7 @@
       <package name="javax" withSubpackages="true" static="false" />
     </value>
   </option>
+  <option name="RIGHT_MARGIN" value="140" />
   <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
   <option name="JD_ALIGN_PARAM_COMMENTS" value="false" />
   <option name="JD_ALIGN_EXCEPTION_COMMENTS" value="false" />
@@ -25,6 +26,7 @@
   <option name="JD_KEEP_EMPTY_PARAMETER" value="false" />
   <option name="JD_KEEP_EMPTY_EXCEPTION" value="false" />
   <option name="JD_KEEP_EMPTY_RETURN" value="false" />
+  <option name="FORMATTER_TAGS_ENABLED" value="true" />
   <option name="WRAP_COMMENTS" value="true" />
   <JavaCodeStyleSettings>
     <option name="ANNOTATION_PARAMETER_WRAP" value="1" />
