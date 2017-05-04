@@ -1,0 +1,10 @@
+apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
+
+checkstyle {
+    config resources.text.fromString('https://bitbucket.org/paypit/codestyle/raw/master/checkstyle.xml'.toURL().getText())
+}
+
+findbugs {
+    ignoreFailures = true
+}
