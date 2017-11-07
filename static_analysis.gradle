@@ -7,5 +7,5 @@ checkstyle {
 
 pmd {
     ignoreFailures = true
-    ruleSetConfig resources.text.fromString('https://bitbucket.org/paypit/codestyle/raw/master/pmd.xml'.toURL().getText())
+    ruleSetConfig = resources.text.fromString('https://bitbucket.org/paypit/codestyle/raw/master/pmd.xml'.toURL().getText())
 }
