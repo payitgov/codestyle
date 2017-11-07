@@ -1,10 +1,11 @@
 apply plugin: 'checkstyle'
-apply plugin: 'findbugs'
+apply plugin: 'pmd'
 
 checkstyle {
     config resources.text.fromString('https://bitbucket.org/paypit/codestyle/raw/master/checkstyle.xml'.toURL().getText())
 }
 
-findbugs {
+pmd {
     ignoreFailures = true
+    ruleSetConfig = resources.text.fromString('https://bitbucket.org/paypit/codestyle/raw/master/pmd.xml'.toURL().getText())
 }
