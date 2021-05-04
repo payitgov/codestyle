@@ -1,7 +1,9 @@
 # IntelliJ
 
-To use the IntelliJ code style, copy intellij.xml into `~/Library/Preferences/IdeaIC15/codestyles`,
-restart IntelliJ, and select Payit Style in Preferences: `Editor -> Code Style -> Scheme`
+To use the IntelliJ code style, copy intellij.xml into `~/Library/Preferences/IdeaIC15/codestyles` (or `~/Library/Application\ 
+Support/JetBrains/IdeaIC2021.1/codestyles` if using IntelliJ 2021). 
+
+Restart IntelliJ, and select Payit Style in Preferences: `Editor -> Code Style -> Scheme`
 
 ## Checkstyle Plugin
 1. `IntelliJ IDEA -> Preferences` or (`⌘,`)/(`CMD+,`).
